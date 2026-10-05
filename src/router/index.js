@@ -15,8 +15,8 @@ import Testimonial from '../views/Page/Testimoni/Testimoni.vue';
 import Inventory from '../views/Page/Gudang/LayoutDataInventory.vue';
 import DataInventoryEvent from '../views/Page/Gudang/DataEventInventory/DataEventInventory.vue';
 import DetailTransferInventory from '../views/Page/Gudang/Transfer/DetailTransferInventory.vue';
-import OrderDetail from '../views/Page/Pelanggan/Order/LayoutDetailOrder.vue';
-import CustomerDetail from '../views/Page/Pelanggan/Customer/LayoutDetailCustomer.vue';
+import OrderDetail from '../views/Page/Order/Order/LayoutDetailOrder.vue';
+import CustomerDetail from '../views/Page/Order/Customer/LayoutDetailCustomer.vue';
 import Order from '../views/Page/Order/Order.vue';
 import DataOrder from '../views/Page/Order/LayoutOrder.vue';
 import Profile from '../views/Page/User/Profile.vue';
@@ -26,7 +26,7 @@ import DetailFinanceSuperAdmin from '../views/Page/Finance/SuperAdmin/DetailFina
 import OrderData from '../views/Page/Order/OrderDataAdd.vue';
 import Payment from '../views/Page/Pembayaran/LayoutPayment.vue';
 import Installment from '../views/Page/Pembayaran/InstallmentPage.vue';
-import InstallmentCustomer from '../views/Page/Pelanggan/Pembayaran/InstallmentPage.vue';
+import InstallmentCustomer from '../views/Page/Order/Pembayaran/InstallmentPage.vue';
 import NotFound from '../views/Components/NotFound.vue'; // Import the NotFound component
 import MeetingSchedule from '../views/Page/Meeting/MeetingSchedule.vue'; // Tambahkan import untuk MeetingSchedule.vue
 import { logoutUser } from '../api/services/authService';
