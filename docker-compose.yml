@@ -1,0 +1,6 @@
+services:
+  frontend:
+    image: ssugab/andkctrng-fe:1.0
+    container_name: andika-fe
+    ports:
+      - "4173:4173"

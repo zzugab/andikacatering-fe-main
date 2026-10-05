@@ -1,0 +1,113 @@
+- Halaman Data Keuangan Bu Dini (Super Admin)
+
+-- Total 2 Endpoint 
+
+DefaultFincanceSa.vue
+- Total Pemasukan
+- Total Pengeluaran
+- Keuntungan/ Dana Sisa
+- Filter Tanggal Acara
+- Order ID
+- Nama Cutomer
+- Alamat
+- Tanggal Acara
+- Total Pembayaran
+- Total Dibayarkan
+- Dana Sisa
+- Detail 
+
+DetailFinanceSu.vue 
+- Detail Customer
+ -- Nama 
+ -- Phone 
+ -- Alamat
+ -- Tanggal Acara
+
+TabLayoutOutcome
+- Total Pembayaran
+- Total Dibayarkan
+- Dana Sisa
+- Bukti Pembayaran
+- Tanggal Pembayaran
+- Bank
+
+TabLayoutIncome
+- Dana Pelanggan
+- Total Pembelanjaan
+- Dana Sisa
+- Bukti Nota
+- Tanggal Belanja
+- Total Belanja
+- Deskripsi
+
+
+
+api/financialRecordSa
+
+{
+  "data" : {
+    "status": true,
+    "data" : {
+        "total_income": 15000000,
+        "total_expenses": 12000000,
+        "profit_remaining_funds": 3000000,
+        "data_order": [
+            {
+            "order_id": "e6adecde-6bd2-4d3c-a695-bcea860195a4",
+            "order_name": "ORD123456",
+            "customer_name": "Dini Rahmawati",
+            "address": "Jl. Merdeka No. 45, Jakarta",
+            "event_date": "2024-01-30",
+            "total_payment": 5000000,
+            "total_paid": 4500000,
+            "remaining_funds": 500000,
+            },
+            {...}
+        ]
+    },
+  }
+  "message": 200,
+  "settings": []
+}
+
+api/detailFinancialRecordSa/{uuid}
+
+{
+  "data" : {
+    "status": true,
+    "data": {
+        "customer": {
+            "name": "Dini Rahmawati",
+            "phone_1": "081234567890",
+            "phone_2": "081234567890",
+            "location_event": "Jl. Merdeka No. 45, Jakarta",
+            "event_date": "2024-01-30"
+            },
+        "Income": {
+            "total_payment": 5000000,
+            "total_paid": 4500000,
+            "remaining_funds": 500000,
+            "payment": [{
+                "payment_proof": "https://example.com/payment_proof.jpg",
+                "payment_date": "2024-01-20",
+                "bank": "BCA"
+                }, { ... },
+                ]
+            },
+        "Outcome": {
+            "customer_funds": 5000000,
+            "total_expenditure": 4500000,
+            "remaining_funds": 500000,
+            "payment": [{
+                "receipt_proof": "https://example.com/receipt_proof.jpg",
+                "shopping_date": "2024-01-18",
+                "total_spent": 4500000,
+                "description": "Purchase of decorations and catering"
+            },{...}
+            ]
+        }
+    }
+  }
+  "message": 200,
+  "settings": []
+}
