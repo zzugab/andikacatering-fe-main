@@ -16,7 +16,7 @@ import Inventory from '../views/Page/Gudang/LayoutDataInventory.vue';
 import DataInventoryEvent from '../views/Page/Gudang/DataEventInventory/DataEventInventory.vue';
 import DetailTransferInventory from '../views/Page/Gudang/Transfer/DetailTransferInventory.vue';
 import OrderDetail from '../views/Page/Order/Order/LayoutDetailOrder.vue';
-import CustomerDetail from '../views/Page/Order/Customer/LayoutDetailCustomer.vue';
+import CustomerDetail from '../views/Page/Pelanggan/Customer/LayoutDetailCustomer.vue';
 import Order from '../views/Page/Order/Order.vue';
 import DataOrder from '../views/Page/Order/LayoutOrder.vue';
 import Profile from '../views/Page/User/Profile.vue';
