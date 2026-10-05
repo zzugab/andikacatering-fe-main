@@ -91,19 +91,19 @@
                         <div class="mb-3">
                           <label class="small mb-1" for="phone_number_1">Phone Number 1</label>
                           <input
-                            class="form-control" id="phone_number_1" v-model="formData.phone_number_1" required />
+                            class="form-control" id="phone_number_1" v-model="formData.phone_number_1" />
                         </div>
 
                         <div class="mb-3">
                           <label class="small mb-1" for="phone_number_2">Phone Number 2</label>
                           <input
-                            class="form-control" id="phone_number_2" v-model="formData.phone_number_2" required />
+                            class="form-control" id="phone_number_2" v-model="formData.phone_number_2" />
                         </div>
 
                         <div class="mb-3">
                           <label class="small mb-1" for="address">Address</label>
                           <input
-                            class="form-control" id="address" v-model="formData.address" required />
+                            class="form-control" id="address" v-model="formData.address" />
                         </div>
   
                         <div class="d-flex justify-content-center">
@@ -118,7 +118,7 @@
 
                         <div class="mb-3">
                           <label class="small mb-1" for="location">Location</label>
-                          <input class="form-control" id="location" v-model="formData.location" required />
+                          <input class="form-control" id="location" v-model="formData.location" />
                         </div>
   
                         <div class="row gx-3">
@@ -128,7 +128,7 @@
                           </div>
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="eventTime">Event Time</label>
-                            <input class="form-control" id="eventTime" type="time" v-model="formData.event_time" required />
+                            <input class="form-control" id="eventTime" type="time" v-model="formData.event_time" />
                           </div>
                         </div>
   
@@ -138,13 +138,12 @@
                             class="form-control"
                             id="portion"
                             v-model="formData.portion"
-                            required
                           />
                         </div>
   
                         <div class="mb-3">
                           <label class="small mb-1" for="note">Note</label>
-                          <textarea class="form-control" id="note" v-model="formData.note" required></textarea>
+                          <textarea class="form-control" id="note" v-model="formData.note"></textarea>
                         </div>
   
                         <div class="mb-3">
@@ -166,71 +165,71 @@
                         <div class="row gx-3">
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="akadStart">Akad Start</label>
-                            <input class="form-control" id="akadStart" type="time" v-model="formData.akad_start" required />
+                            <input class="form-control" id="akadStart" type="time" v-model="formData.akad_start" />
                           </div>
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="akadEnd">Akad End</label>
-                            <input class="form-control" id="akadEnd" type="time" v-model="formData.akad_end" required />
+                            <input class="form-control" id="akadEnd" type="time" v-model="formData.akad_end" />
                           </div>
                         </div>
   
                         <div class="row gx-3">
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="resepsiStart">Resepsi Start</label>
-                            <input class="form-control" id="resepsiStart" type="time" v-model="formData.resepsi_start" required />
+                            <input class="form-control" id="resepsiStart" type="time" v-model="formData.resepsi_start" />
                           </div>
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="resepsiEnd">Resepsi End</label>
-                            <input class="form-control" id="resepsiEnd" type="time" v-model="formData.resepsi_end" required />
+                            <input class="form-control" id="resepsiEnd" type="time" v-model="formData.resepsi_end" />
                           </div>
                         </div>
 
                         <div class="mb-3">
                           <label class="small mb-1" for="nuance">Nuance</label>
-                          <input class="form-control" id="nuance" v-model="formData.nuance" required />
+                          <input class="form-control" id="nuance" v-model="formData.nuance" />
                         </div>
   
                         <div class="row gx-3">
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="generalBuffet">General Buffet</label>
-                            <input class="form-control" id="generalBuffet" v-model="formData.general_buffet" required />
+                            <input class="form-control" id="generalBuffet" v-model="formData.general_buffet" />
                           </div>
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="vipBuffet">VIP Buffet</label>
-                            <input class="form-control" id="vipBuffet" v-model="formData.vip_buffet" required />
+                            <input class="form-control" id="vipBuffet" v-model="formData.vip_buffet" />
                           </div>
                         </div>
   
                         <div class="row gx-3">
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="vipTable">VIP Table</label>
-                            <input class="form-control" id="vipTable" v-model="formData.vip_table" required />
+                            <input class="form-control" id="vipTable" v-model="formData.vip_table" />
                           </div>
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="weddingFoodTable">Wedding Food Table</label>
-                            <input class="form-control" id="weddingFoodTable" v-model="formData.wedding_food_table" required />
+                            <input class="form-control" id="weddingFoodTable" v-model="formData.wedding_food_table" />
                           </div>
                         </div>
   
                         <div class="row gx-3">
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="akadTable">Akad Table</label>
-                            <input class="form-control" id="akadTable" v-model="formData.akad_table" required />
+                            <input class="form-control" id="akadTable" v-model="formData.akad_table" />
                           </div>
                           <div class="col-md-6 mb-3">
                             <label class="small mb-1" for="receptionTable">Reception Table</label>
-                            <input class="form-control" id="receptionTable" v-model="formData.reception_table" required />
+                            <input class="form-control" id="receptionTable" v-model="formData.reception_table" />
                           </div>
                         </div>
   
                         <div class="mb-3">
                           <label class="small mb-1" for="forNaib">For Naib</label>
-                          <input class="form-control" id="forNaib" v-model="formData.for_naib" required />
+                          <input class="form-control" id="forNaib" v-model="formData.for_naib" />
                         </div>
   
                         <div class="mb-3">
                           <label class="small mb-1" for="ayamBekakak">Ayam Bekakak Nasi Punar</label>
-                          <select class="form-control" id="ayamBekakak" v-model="formData.ayam_bekakak_nasi_punar" required>
+                          <select class="form-control" id="ayamBekakak" v-model="formData.ayam_bekakak_nasi_punar">
                             <option value="" disabled>Pilih opsi</option>
                             <option value="Ya">Ya</option>
                             <option value="Tidak">Tidak</option>
@@ -239,7 +238,7 @@
   
                         <div class="mb-3">
                           <label class="small mb-1" for="micaForBesan">Mica for Besan</label>
-                          <select class="form-control" id="micaForBesan" v-model="formData.mica_for_besan" required>
+                          <select class="form-control" id="micaForBesan" v-model="formData.mica_for_besan">
                             <option value="" disabled>Pilih opsi</option>
                             <option value="Ya">Ya</option>
                             <option value="Tidak">Tidak</option>
