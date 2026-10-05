@@ -172,9 +172,9 @@
 </template>
 
 <script>
-import NavbarDashboard from '../../Components/NavbarDasboard.vue';
-import Sidebar from '../../Components/Sidebar.vue';
-import paymentInstallmentComponent from '../../../api/component/paymentInstallmentComponent'; // sesuaikan dengan path file paymentInstallmentComponent.js
+import NavbarDashboard from '../../../Components/NavbarDasboard.vue';
+import Sidebar from '../../../Components/Sidebar.vue';
+import paymentInstallmentComponent from '../../../../api/component/paymentInstallmentComponent'; // sesuaikan dengan path file paymentInstallmentComponent.js
 
 export default {
   components: {
