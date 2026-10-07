@@ -1,6 +1,21 @@
 services:
   frontend:
-    image: ssugab/andkctrng-fe:1.0
-    container_name: andika-fe
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: andika-frontend
+
+    restart: unless-stopped
+
     ports:
       - "4173:4173"
+
+    networks:
+      - andika-network
+
+
+networks:
+  andika-network:
+    external: true
+    name: andikacatering-api-main_andika-network
